@@ -12,6 +12,7 @@
 ```sh
 1.安装依赖包：$ npm install
 2.编译ES6文件：$ webpack
+```
 
 License
 ----
