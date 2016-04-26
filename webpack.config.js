@@ -2,6 +2,7 @@ var webpack = require('webpack');
 module.exports = {
     entry: {
         es: './src/es.js',
+        react: './src/react.js',
     },
     output: {
         path: './build',
@@ -14,6 +15,9 @@ module.exports = {
         loaders: [{
             test: /\.js$/,
             loader: 'babel-loader'
+        }, {
+            test: /\.jsx$/,
+            loader: 'babel-loader!jsx-loader?harmony'
         }]
     }
 };
