@@ -46,12 +46,21 @@
 
 	'use strict';
 
-	// 第一章
-	var a = 'hello es6';
-	for (var i = 0; i < 3; i++) {
-	  console.log(i);
-	}
-	console.log('第一章：' + a);
+	var mountNode = document.getElementById('r');
+
+	var Hello = React.createClass({
+	    displayName: 'Hello',
+
+	    render: function render() {
+	        return React.createElement(
+	            'div',
+	            null,
+	            'Hello React'
+	        );
+	    }
+	});
+
+	ReactDOM.render(React.createElement(Hello, null), mountNode);
 
 /***/ }
 /******/ ]);

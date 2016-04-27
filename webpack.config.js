@@ -1,8 +1,7 @@
 var webpack = require('webpack');
 module.exports = {
     entry: {
-        es: './src/es.js',
-        react: './src/react.js',
+        main: './src/main.js'
     },
     output: {
         path: './build',
